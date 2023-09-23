@@ -1,0 +1,11 @@
+.text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.row div {
+    background-color: white;
+    text-align: center;
+    width: 30%;
+    margin: 0 20px
+}

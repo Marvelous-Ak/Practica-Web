@@ -1,0 +1,80 @@
+<div class="text-center mt-5">
+  <h2>{{titulo}}</h2> <!--Se llama una variable de que creo en el component.ts DATA BINDIG-->
+  <!--Esto se llama interpolación-->
+  <p>
+    Building and maintaining WordPress site is easy with our thoughtfully
+    designed tools
+  </p>
+</div>
+<dir class="conteiner mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="assets/candado.png" alt="" />
+      <h4>Free SSL Certificates</h4>
+      <p>
+        All hosting pains include free Let´s Encrypt Standard andWildcard SSL
+        certificates. For your cenvenience the Standard SSL comes preinstalled
+        on you site.
+      </p>
+      <a href="#">FIND OUT MORE</a>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/backup.png" alt="" />
+      <h4>Daily Backups</h4>
+      <p>
+        We back up your account daily and keep up to 30 copies. Your also have
+        the option to create insant on-demand backups with the click of a button
+      </p>
+      <a href="#">FIND OUT MORE</a>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/correo.png" alt="" />
+      <h4>Email Services</h4>
+      <p>
+        Create unlimited account with the webmail interface included. Stop spam
+        with the free Spam Protection services
+      </p>
+      <a href="#">FIND OUT MORE</a>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/tools.png" alt="" />
+      <h4>Staging Tool</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam qui
+        vero dignissimos sapiente sunt possimus illum iusto assumenda voluptates
+        harum quo dolorem itaque sint ab quas, facere provident saepe. Iure.
+      </p>
+      <a href="#">FIND OUT MORE</a>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/admirador.png" alt="" />
+      <h4>Dev Toolkit</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        nihil expedita, aperiam dolores sed perferendis aliquid ex adipisci
+        nesciunt, harum cum soluta quaerat ratione eligendi. Dignissimos labore
+        error sed quod?
+      </p>
+      <a href="#">FIND OUT MORE</a>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/mapa.png" alt="" />
+      <h4>Free CDN</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet
+        repellat illo sequi, quis aperiam aliquam repudiandae voluptate sed,
+        amet iste facere corporis adipisci minima nemo quas rerum ab dolorum.
+        Possimus!
+      </p>
+      <a href="#">FIND OUT MORE</a>
+    </div>
+  </div>
+</dir>
+
+<button class="btn btn-warning" (click)="onChangeText()">Traducir de texto</button>
+<br>
+<br>
+<label for="text">Inserte texto</label><br>
+<input type="text" [(ngModel)] = "name">
+<p>Resultado</p>
+<p>{{name}}</p>

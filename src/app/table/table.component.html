@@ -1,0 +1,28 @@
+<div class="conteiner">
+  <dir class="nav justify-content-center">
+    <button class="btn btn-primary mx-3">añadir</button>
+  </dir>
+</div>
+<table class="table m-5">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Ocupacion</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personales; index as i">
+        <th scope="row" >{{i+1}}</th>
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido}}</td>
+        <td>{{persona.ocupacion}}</td>
+        <td>
+          <button class="btn btn-success mx-2">Editar</button>
+          <button class="btn btn-danger mx-2">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
